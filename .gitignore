@@ -35,4 +35,4 @@ backend/build/
 *.cache
 
 # Ignore resume PDFs
-backend/resume/*.pdf
+

@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container { width: 100%; max-width: 420px; }
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(21, 30, 50, 0.08);
+}
+
+h1 { margin: 0 0 8px 0; font-size: 20px; }
+.muted { color: #6b7280; font-size: 13px; }
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0 16px 0;
+  border-radius: 8px;
+  border: 1px solid #e6e9ee;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 12px;
+  background: #0b74ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+hr { border: none; border-top: 1px solid #eef2f6; margin: 16px 0; }
+
+.notice { margin-top: 12px; padding: 10px; border-radius: 8px; font-size: 14px; }
+.notice.error { background: #ffefef; color: #821414; }
+.notice.success { background: #f0fff4; color: #065f46; }
